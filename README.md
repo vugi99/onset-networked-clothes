@@ -36,10 +36,10 @@
 ```
 {
    body = {"/Game/CharacterModels/SkeletalMesh/BodyMerged/HZN_CH3D_Normal04_LPR",{1.3,1.3,1.3},false,false,{"/Game/CharacterModels/Materials/HZN_Materials/M_HZN_Body_NoShoesLegsTorso",0}},
-   clothing0 = {"/Game/CharacterModels/SkeletalMesh/HZN_CH3D_Hair_Business_LP",false},
-   clothing1 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalShirt_LPR",false},
-   clothing2 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalPants_LPR",false},
-   clothing3 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_BusinessShoes_LPR",false},
+   clothing0 = {"/Game/CharacterModels/SkeletalMesh/HZN_CH3D_Hair_Business_LP"},
+   clothing1 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalShirt_LPR"},
+   clothing2 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalPants_LPR"},
+   clothing3 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_BusinessShoes_LPR"},
    clothing4 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_TacticalGlasses_LPR",false,false,{0.0, 0.0, 3.5}},
    clothing5 = false
 }
