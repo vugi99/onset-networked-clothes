@@ -63,11 +63,13 @@ GetPlayerPropertyValue(player, "NetworkedClothes")
 * You need to include onset-networked-clothes files to your package to use functions
 * Set Networked Clothing Preset
 ```
+--server
 SetPlayerNetworkedClothingPreset(player,presetid)
 return true on success , false on error
 ```
 * Set Networked Custom Clothes
 ```
+--server
 SetPlayerNetworkedCustomClothes(player,Custom Clothes Table)
 return true on success , false on error
 ```
