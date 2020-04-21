@@ -35,13 +35,13 @@
 * Example :
 ```
 {
-    body = {"/Game/CharacterModels/Female/Meshes/SK_Female01"},
-    clothing0 = {"/Game/CharacterModels/Female/Meshes/SK_Hair01"},
-    clothing1 = {"/Game/CharacterModels/Female/Meshes/HZN_CH3D_Prison-Guard_LPR"},
-    clothing2 = {"/Game/CharacterModels/Female/Meshes/HZN_Outfit_Piece_DenimPants_LPR"},
-    clothing3 = {"/Game/CharacterModels/Female/Meshes/SK_Shoes01"},
-    clothing4 = false,
-    clothing5 = false
+   body = {"/Game/CharacterModels/SkeletalMesh/BodyMerged/HZN_CH3D_Normal04_LPR",{1.3,1.3,1.3},false,false,{"/Game/CharacterModels/Materials/HZN_Materials/M_HZN_Body_NoShoesLegsTorso",0}},
+   clothing0 = {"/Game/CharacterModels/SkeletalMesh/HZN_CH3D_Hair_Business_LP",false},
+   clothing1 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalShirt_LPR",false},
+   clothing2 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalPants_LPR",false},
+   clothing3 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_BusinessShoes_LPR",false},
+   clothing4 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_TacticalGlasses_LPR",false,false,{0.0, 0.0, 3.5}},
+   clothing5 = false
 }
 ```
 #### Developers
