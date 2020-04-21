@@ -24,11 +24,13 @@
 * for each part you can do :
 ```
 -- false = don't change , nil = destroy thing (you can only put nil at skeletal mesh path)
-{nil, -- skeletal mesh path
-{1,1,1}, -- relative scale or put false
-{0,0,0}, -- relative rotation or put false 
-false, -- relative location or put false
-false} -- {material path , material slot} or put false
+{
+   nil, -- skeletal mesh path
+   {1,1,1}, -- relative scale or put false
+  {0,0,0}, -- relative rotation or put false 
+   false, -- relative location or put false
+   false -- {material path , material slot} or put false
+} 
 ```
 * Example :
 ```
@@ -51,11 +53,11 @@ GetPlayerPropertyValue(player, "NetworkedClothes")
 -- returned tables can be like this
 --[[
 {
-   type = "preset"
+   type = "preset",
    clothes = presetid
 }
 {
-   type = "custom"
+   type = "custom",
    clothes = Custom Clothes Table
 }
 ]]--
