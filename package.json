@@ -1,0 +1,12 @@
+{
+	"author": "Voltaism",
+	"version": "1.0",
+        "onset_build": "1.1.0",
+        "server_scripts": [
+                "server/clothes.lua"
+        ],
+        "client_scripts": [
+                "client/cl_clothes.lua"
+        ]
+
+}
