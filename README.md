@@ -9,13 +9,13 @@
 * defaultCustomClothes = Custom Clothes Table
 
 #### Custom Clothes Table Structure
-* a Custom Clothes Table must be at least
+* a Custom Clothes Table Should be like that
 ```
 {
     body = false,
     clothing0 = false,
     clothing1 = false,
-    clothing2 = false,  -- never put nil for them or it won't work
+    clothing2 = false,
     clothing3 = false,
     clothing4 = false,
     clothing5 = false
@@ -40,8 +40,7 @@
    clothing1 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalShirt_LPR"},
    clothing2 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_FormalPants_LPR"},
    clothing3 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_BusinessShoes_LPR"},
-   clothing4 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_TacticalGlasses_LPR",false,false,{0.0, 0.0, 3.5}},
-   clothing5 = false
+   clothing4 = {"/Game/CharacterModels/SkeletalMesh/Outfits/HZN_Outfit_Piece_TacticalGlasses_LPR",false,false,{0.0, 0.0, 3.5}}
 }
 ```
 #### Developers
