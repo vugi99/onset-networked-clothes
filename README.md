@@ -18,7 +18,11 @@
     clothing2 = false,
     clothing3 = false,
     clothing4 = false,
-    clothing5 = false
+    clothing5 = false,
+    clothing6 = false,
+    clothing7 = false,
+    clothing8 = false,
+    clothing9 = false
 }
 ```
 * for each part you can do :

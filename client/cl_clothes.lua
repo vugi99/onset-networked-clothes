@@ -64,6 +64,22 @@ local function SetClothes(ply,plyclothestbl)
                local sk = GetPlayerSkeletalMeshComponent(ply, "Clothing5")
                customlogic(sk,clothes.clothing5)
             end
+            if clothes.clothing6 then
+               local sk = GetPlayerSkeletalMeshComponent(ply, "Clothing6")
+               customlogic(sk,clothes.clothing6)
+            end
+            if clothes.clothing7 then
+               local sk = GetPlayerSkeletalMeshComponent(ply, "Clothing7")
+               customlogic(sk,clothes.clothing7)
+            end
+            if clothes.clothing8 then
+               local sk = GetPlayerSkeletalMeshComponent(ply, "Clothing8")
+               customlogic(sk,clothes.clothing8)
+            end
+            if clothes.clothing9 then
+               local sk = GetPlayerSkeletalMeshComponent(ply, "Clothing9")
+               customlogic(sk,clothes.clothing9)
+            end
          end
       end
    end
