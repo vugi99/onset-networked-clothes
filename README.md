@@ -52,6 +52,7 @@
 ```
 -- server,client
 GetPlayerPropertyValue(player, "NetworkedClothes")
+GetNPCPropertyValue(npc, "NetworkedClothes")
 -- returns a table
 -- returned tables can be like this
 --[[
@@ -70,11 +71,13 @@ GetPlayerPropertyValue(player, "NetworkedClothes")
 ```
 -- server
 SetPlayerNetworkedClothingPreset(player,presetid)
+SetNPCNetworkedClothingPreset(npc,presetid)
 return true on success , false on error
 ```
 * Set Networked Custom Clothes
 ```
 -- server
 SetPlayerNetworkedCustomClothes(player,Custom Clothes Table)
+SetNPCNetworkedCustomClothes(npc,Custom Clothes Table)
 return true on success , false on error
 ```

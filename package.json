@@ -1,6 +1,6 @@
 {
 	"author": "Voltaism",
-	"version": "1.1",
+	"version": "1.2",
         "onset_build": "1.2.1",
         "server_scripts": [
                 "server/clothes.lua"

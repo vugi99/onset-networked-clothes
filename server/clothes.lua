@@ -46,7 +46,6 @@ local function SetPending(ply)
    for i,v in ipairs(pendingclothes) do
       if v.ply == ply then
          SetPlayerPropertyValue(ply, "NetworkedClothes", v.Clothes,true)
-         print("SET")
          table.remove(pendingclothes,i)
          break
       end
@@ -54,7 +53,7 @@ local function SetPending(ply)
 end
 
 function SetPlayerNetworkedClothingPreset(ply,presetnb)
-   if presetnb then
+   if (presetnb and IsValidPlayer(ply)) then
       local presetnb = tonumber(presetnb)
       local PlayerClothes = {}
       PlayerClothes.type = "preset"
@@ -70,7 +69,7 @@ function SetPlayerNetworkedClothingPreset(ply,presetnb)
 end
 
 function SetPlayerNetworkedCustomClothes(ply,customclothingtbl)
-   if IsCustomValid(customclothingtbl) then
+   if (IsCustomValid(customclothingtbl) and IsValidPlayer(ply)) then
       local PlayerClothes = {}
       PlayerClothes.type = "custom"
       PlayerClothes.clothes = customclothingtbl
@@ -79,6 +78,29 @@ function SetPlayerNetworkedCustomClothes(ply,customclothingtbl)
       else
          AddPendingClothes(ply,PlayerClothes)
       end
+      return true
+   end
+   return false
+end
+
+function SetNPCNetworkedClothingPreset(npc,presetnb)
+   if (presetnb and IsValidNPC(npc)) then
+      local presetnb = tonumber(presetnb)
+      local NPCClothes = {}
+      NPCClothes.type = "preset"
+      NPCClothes.clothes = presetnb
+      SetNPCPropertyValue(npc, "NetworkedClothes", NPCClothes,true)
+      return true
+   end
+   return false
+end
+
+function SetNPCNetworkedCustomClothes(npc,customclothingtbl)
+   if (IsCustomValid(customclothingtbl) and IsValidNPC(npc)) then
+      local NPCClothes = {}
+      NPCClothes.type = "custom"
+      NPCClothes.clothes = customclothingtbl
+      SetNPCPropertyValue(npc, "NetworkedClothes", NPCClothes,true)
       return true
    end
    return false
